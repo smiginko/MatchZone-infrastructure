@@ -51,6 +51,8 @@ spec:
                 secretKeyRef:
                   name: keycloak-secret
                   key: keycloak_admin_secret
+            - name: MATCHZONE_LIQUIBASE_ENABLED
+              value: "true"
             # Override casti Spring Boot konfiguracie kvoli citlivym udajom
             - name: JAVA_OPTS
               value: >-
